@@ -1,0 +1,10 @@
+.btn {
+  padding: 1rem 2.2rem;
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: 0.2s all;
+
+  &:hover {
+    opacity: 70%;
+  }
+}

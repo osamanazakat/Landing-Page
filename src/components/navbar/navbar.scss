@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  height: 8rem;
+  position: relative;
+  display: grid;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__links-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__link {
+    color: $very-dark-blue;
+    transition: 0.2s all;
+
+    &:hover {
+      color: $dark-grayish-blue;
+    }
+  }
+}

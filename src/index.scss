@@ -1,0 +1,58 @@
+@import "./styles/mixins.scss";
+@import "./styles/variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  box-sizing: inherit;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+
+  @include respond(tab-port) {
+    font-size: 56.25%;
+  }
+  @include respond(phone) {
+    font-size: 50%;
+  }
+  @include respond(desktop) {
+    font-size: 68.75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+img {
+  display: block;
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+// styles for section container
+.container {
+  width: $container-md;
+  margin-inline: auto;
+  max-width: 1600px;
+}
+
+// styles for buttons
+.btn-red {
+  background-color: $bright-red;
+  color: $vary-light-gray;
+}
