@@ -1,0 +1,44 @@
+@import "../../styles/mixins.scss";
+
+.header {
+  background-image: url("../../assets/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top -10rem right -10rem;
+
+  &__container {
+    padding-block: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+      text-align: center;
+    }
+
+    @include respond(desktop) {
+      gap: 16rem;
+    }
+  }
+
+  &__text {
+    margin-block: 3rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  @include respond(tab-port) {
+    &__right {
+      order: 1;
+    }
+
+    &__left {
+      order: 2;
+    }
+  }
+}

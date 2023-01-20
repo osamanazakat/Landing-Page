@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.cta {
+  padding-block: 5rem;
+  background-color: $bright-red;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      text-align: center;
+      gap: 3rem;
+    }
+  }
+
+  &__heading {
+    color: white;
+    width: 35%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}

@@ -44,15 +44,32 @@ button {
   background: none;
 }
 
+p {
+  color: $dark-grayish-blue;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $dark-blue;
+}
+
 // styles for section container
 .container {
   width: $container-md;
   margin-inline: auto;
   max-width: 1600px;
+  overflow-x: hidden;
 }
 
 // styles for buttons
 .btn-red {
   background-color: $bright-red;
   color: $vary-light-gray;
+}
+
+.btn-white {
+  background-color: white;
+  color: $bright-red;
 }
