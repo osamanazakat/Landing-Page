@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.testimonials {
+  padding-block: 15rem;
+  overflow-x: hidden;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+
+  &__carousel {
+    cursor: grab;
+  }
+
+  &__carousel-inner {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  &__testimonial {
+    background-color: $very-light-gray;
+    padding: 6rem 3rem 4rem;
+    min-width: 52rem;
+    text-align: center;
+    position: relative;
+
+    @include respond(tab-port) {
+      min-width: 32rem;
+      padding: 5rem 1rem 1rem;
+    }
+  }
+
+  &__testimonial-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__testimonial-avatar {
+    width: 7rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -21,7 +21,11 @@ const Navbar = () => {
           {navLinks.map(({ id, link }) => {
             return (
               <li key={id}>
-                <a href="#" className="navbar__link">
+                <a
+                  href="#"
+                  className="navbar__link"
+                  onClick={() => setNavShowing(!navShowing)}
+                >
                   {link}
                 </a>
               </li>

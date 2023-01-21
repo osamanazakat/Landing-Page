@@ -1,0 +1,64 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.footer {
+  padding-block: 7rem;
+  background-color: $very-dark-blue;
+
+  &__container {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  &__icons {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__icon {
+    color: $very-light-gray;
+    background: none;
+    font-size: 2rem;
+
+    &:hover {
+      color: $bright-red;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    color: $very-light-gray;
+    width: fit-content;
+
+    &:hover {
+      color: $bright-red;
+    }
+  }
+
+  &__copyright {
+    margin-top: 4rem;
+  }
+
+  &__right form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    input {
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      max-width: 25rem;
+      border: none;
+    }
+  }
+}

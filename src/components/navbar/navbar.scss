@@ -1,5 +1,6 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
+@import "../../styles/animations.scss";
 
 .navbar {
   height: 8rem;
@@ -20,12 +21,14 @@
 
     @include respond(tab-port) {
       position: absolute;
-      background-color: red;
+      background-color: $very-light-gray;
       border-radius: 1rem;
       flex-direction: column;
       top: 100%;
       width: 90%;
       padding-block: 4rem;
+      animation: upIn 0.7s ease;
+      outline: 100rem solid rgba($very-dark-blue, 0.1);
     }
   }
 
@@ -43,7 +46,6 @@
     color: $very-dark-blue;
     cursor: pointer;
     display: none;
-
     @include respond(tab-port) {
       display: block;
     }
